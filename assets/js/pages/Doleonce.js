@@ -43,7 +43,7 @@ class Doleonce extends Component {
     //     })
     // }
     getDoleances = () => {
-        axios.get('https://localhost:8000/api/doleance').then(response => {
+        axios.get('http://localhost:8000/api/doleance').then(response => {
             this.setState({ doleances: response.data, loading: false });
             console.log('test ', response.data); 
         }).catch(error => {
